@@ -1,7 +1,7 @@
 import { defineEventHandler, readBody } from 'h3'
 import { Resend } from 'resend'
 
-const resend = new Resend('re_42XfHWdx_8qTYcoNoEqTdWCfVCcjX6ibt');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
@@ -16,9 +16,9 @@ export default defineEventHandler(async (event) => {
   try {
     // Отправляем письмо на свою почту
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'v.kushnir22@gmail.com',
-      subject: 'New Interest 🎉',
+      from: 'riviera@resend.dev',
+      to: 'v.kushnir22@gmail.com, s.artamonova@mered.ae',
+      subject: 'Riviera New Interest',
       text: `First Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}`,
     })
 
