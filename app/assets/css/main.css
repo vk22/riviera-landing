@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Chiswick Grotesque';
+    src: url('~/assets/font/ChiswickGrotesque-Regular-Web.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Chiswick Sans';
+	src: url('~/assets/font/ChiswickSans-Light-Web.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Chiswick Sans Italic';
+	src: url('~/assets/font/ChiswickSans-LightItalic-Web.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chiswick Grotesque';
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Chiswick Sans';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.font-grotesk {
+    font-family: 'Chiswick Grotesque';
+}
+.font-sans {
+    font-family: 'Chiswick Sans';
+}
+.font-sans-italic {
+    font-family: 'Chiswick Sans Italic';
+}
+
+.text-accent {
+    font-family: 'Chiswick Sans Italic';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
