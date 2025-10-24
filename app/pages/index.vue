@@ -88,6 +88,5 @@ onMounted(() => {
   background-size: cover;
 }
 
-.landing-index {
-}
+
 </style>
